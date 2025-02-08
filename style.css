@@ -61,8 +61,7 @@ body {
   background: var(--secondary);
   transition: all 0.3s ease;
   transform: translateY(-5px);
-  box-shadow: 10px 10px 10px #0000004d , -3px -3px 5px lightgray;
-}
+  box-shadow: 10px 10px 10px #0000004d, -3px -3px 5px lightgray;}
 
 .tasks-container {
   margin-top: 2rem;
@@ -82,7 +81,7 @@ body {
 }
 .task-item:hover {
   transform: translateY(-5px);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .task-text {
