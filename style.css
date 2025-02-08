@@ -205,7 +205,7 @@ input:not(:placeholder-shown) ~ .floating-placeholder {
   }
   .floating-placeholder {
     top: 1;
-    transform: translateY(-200%);
+    transform: translateY(-250%);
   }
 }
 
