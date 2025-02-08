@@ -57,6 +57,13 @@ body {
   transition: transform 0.2s ease;
   min-width: 150px;
 }
+.add-btn:hover {
+  transform: translateY(-2px);
+  background: var(--secondary);
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px gray, -3px -3px 5px lightgray;
+}
 
 .tasks-container {
   margin-top: 2rem;
@@ -73,6 +80,10 @@ body {
   transition: all 0.3s ease;
   cursor: move;
   flex-wrap: wrap;
+}
+.task-item:hover {
+  transform: translateY(5px);
+  box-shadow: 10px 10px 10px 10px rgba(16, 0, 54, 0.1);
 }
 
 .task-text {
