@@ -143,6 +143,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+.filter-btn:hover {
+  background-color: var(--secondary);
+  transition: all 0.6s ease;
+}
 
 /* Media Queries for Responsiveness */
 
@@ -197,5 +201,12 @@ body {
   .filter-section {
     flex-direction: column;
     align-items: center;
+  }
+  .filter-btn {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 }
