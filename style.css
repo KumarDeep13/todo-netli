@@ -49,6 +49,13 @@ h1{
   transition: all 0.3s ease;
   min-width: 200px;
 }
+
+.task-input:focus {
+  outline: none;
+  border-color: var(--secondary);
+  border: 1px solid #ffae00;
+}
+
 .floating-placeholder {
   position: absolute;
   top: 50%;
@@ -58,15 +65,16 @@ h1{
   background: white;
   padding: 0 0.5rem;
   pointer-events: none;
+  color: #4d4d4d;
 }
 input:focus ~ .floating-placeholder,
 input:not(:placeholder-shown) ~ .floating-placeholder {
   top: 0;
   transform: translateY(-50%);
   font-size: 1rem;
-  color: #007bff;
+  color: #4d4d4d;
   background: white;
-  border: 1px solid #007bff;
+  border: 1px solid #ffae00;
   border-radius: 4px;
 }
 
