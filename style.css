@@ -53,7 +53,7 @@ h1{
 .task-input:focus {
   outline: none;
   border-color: var(--secondary);
-  border: 1px solid #ffae00;
+  border: 2px solid #ffae00;
 }
 
 .floating-placeholder {
@@ -74,7 +74,7 @@ input:not(:placeholder-shown) ~ .floating-placeholder {
   font-size: 1rem;
   color: #4d4d4d;
   background: white;
-  border: 2px solid #ffae00;
+  border: 1px solid #ffae00;
   border-radius: 4px;
 }
 
