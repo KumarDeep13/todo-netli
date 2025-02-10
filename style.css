@@ -58,9 +58,9 @@ h1{
 
 .floating-placeholder {
   position: absolute;
-  top: 55%;
+  top: 0;
   left: 0.7rem;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   transition: all 0.3s ease;
   background: white;
   padding: 0 0.5rem;
@@ -204,8 +204,8 @@ input:not(:placeholder-shown) ~ .floating-placeholder {
     text-align: center;
   }
   .floating-placeholder {
-    top: 1;
-    transform: translateY(-250%);
+    top: 0;
+    transform: translateY(50%);
   }
 }
 
