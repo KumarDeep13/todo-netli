@@ -136,6 +136,15 @@ TaskManager.render();
 
 // OpenAI Chatbot Integration
 const API_KEY = "YOUR_OPENAI_API_KEY"; // Replace with your API key
+document.getElementById("send-btn").addEventListener("click", sendMessage);
+
+function displayMessage(message, sender) {
+    const messagesContainer = document.getElementById("messages-container");
+    const messageElement = document.createElement("div");
+    messageElement.className = `message ${sender}`;
+    messageElement.textContent = message;
+    messagesContainer.appendChild(messageElement);
+}
 
 async function sendMessage() {
     let userInput = document.getElementById("user-input").value;
@@ -166,3 +175,5 @@ async function sendMessage() {
 
     document.getElementById("user-input").value = "";
 }
+
+
