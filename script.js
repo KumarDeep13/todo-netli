@@ -138,6 +138,13 @@ TaskManager.render();
 const API_KEY = "YOUR_OPENAI_API_KEY"; // Replace with your API key
 document.getElementById("send-btn").addEventListener("click", sendMessage);
 
+
+
+async function sendMessage() {
+    let userInput = document.getElementById("user-input").value;
+    if (!userInput) return;
+
+
 function displayMessage(message, sender) {
     const messagesContainer = document.getElementById("messages-container");
     const messageElement = document.createElement("div");
@@ -146,10 +153,7 @@ function displayMessage(message, sender) {
     messagesContainer.appendChild(messageElement);
 }
 
-async function sendMessage() {
-    let userInput = document.getElementById("user-input").value;
-    if (!userInput) return;
-
+  
     displayMessage("You: " + userInput, "user");
 
     try {
