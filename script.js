@@ -134,50 +134,6 @@ TaskManager.render();
 
 // Your existing JavaScript code (if any)
 
-// OpenAI Chatbot Integration
-const API_KEY = "YOUR_OPENAI_API_KEY"; // Replace with your API key
-document.getElementById("send-btn").addEventListener("click", sendMessage);
 
-
-
-async function sendMessage() {
-    let userInput = document.getElementById("user-input").value;
-    if (!userInput) return;
-
-
-function displayMessage(message, sender) {
-    const messagesContainer = document.getElementById("messages-container");
-    const messageElement = document.createElement("div");
-    messageElement.className = `message ${sender}`;
-    messageElement.textContent = message;
-    messagesContainer.appendChild(messageElement);
-}
-
-  
-    displayMessage("You: " + userInput, "user");
-
-    try {
-        let response = await fetch("https://your-app.vercel.app/chat", { // Replace with your Vercel backend URL
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: userInput })
-        });
-
-        let data = await response.json();
-        console.log("API Response:", data); // Debugging
-
-        if (data.choices && data.choices.length > 0) {
-            let botReply = data.choices[0].message.content;
-            displayMessage("Bot: " + botReply, "bot");
-        } else {
-            displayMessage("Bot: (No response)", "bot");
-        }
-    } catch (error) {
-        console.error("Error:", error);
-        displayMessage("Bot: (Error occurred)", "bot");
-    }
-
-    document.getElementById("user-input").value = "";
-}
 
 
